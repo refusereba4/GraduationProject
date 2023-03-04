@@ -54,7 +54,7 @@ class CameraPageWindow(QWidget, Ui_CameraPage):
         flag = self.cap.open(self.CAM_NUM)
 
         if flag == False:
-            msg = QMessageBox.Warning(self, u'Warning', u'请检查相机与电脑是否连接正确',
+            msg = QMessageBox.Warning(self, u'Warning', u'请检测相机与电脑是否连接正确',
                                       buttons=QMessageBox.Ok,
                                       defaultButton=QMessageBox.Ok)
         else:
