@@ -25,7 +25,6 @@ class SanUI1(QWidget):
         self.layout = QGridLayout()
 
         self.setStyleSheet(
-            # 'QLabel{font-size:18px;color:rgb(248,181,0)}'
             'QLabel{font-size:18px;}'
             'QPushButton{font-size:12px;background:rgb(255,223,140);}'
             'QMessageBox{color:black;font-size:10px}'

@@ -13,7 +13,7 @@ import predictclass
 
 class Ui_example(QWidget):
     def __init__(self):
-        super().__init__()  # 应该相当于java中的主函数了
+        super().__init__()  # 主函数了
 
         self.layout = QGridLayout(self)  # 创建一个整体界面
         self.setStyleSheet('background:green')

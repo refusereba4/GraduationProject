@@ -62,8 +62,6 @@ def main():
     model_weight_path = "./resnet101-pre.pth"
     assert os.path.exists(model_weight_path), "file {} does not exist.".format(model_weight_path)
     missing_keys, unexpected_keys = net.load_state_dict(torch.load(model_weight_path), strict=False)
-    # for param in net.parameters():
-    #     param.requires_grad = False
     # change fc layer structure
     in_channel = net.fc.in_features
     net.fc = nn.Linear(in_channel, 5)
