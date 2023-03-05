@@ -1,0 +1,5 @@
+apple
+banana
+kiwifruit
+orange
+strawberry
